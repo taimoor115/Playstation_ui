@@ -1,5 +1,15 @@
+import Navbar from "./components/Navbar";
+
 const App = () => {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <>
+      <div className="bg-black h-9 ">
+        <p className="text-white text-xl text-end me-2 ">Sony</p>
+      </div>
+
+      <Navbar />
+    </>
+  );
 };
 
 export default App;
