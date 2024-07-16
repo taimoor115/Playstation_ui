@@ -1,4 +1,3 @@
-import { IconType } from "react-icons";
 import { IoGameController } from "react-icons/io5";
 import { FaGamepad } from "react-icons/fa6";
 import { FaServicestack } from "react-icons/fa6";

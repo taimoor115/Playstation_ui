@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   return (
-    <div className="flex items-center h-16 bg-red-400 sticky top-0 z-50 ">
+    <div className="flex items-center bg-white h-16 sticky top-0 z-50 ">
       <div className="flex items-center  text-black text-sm">
         <div className="flex items-center lg:hidden md:hidden">
           <Drawer />
@@ -38,7 +38,7 @@ const Navbar = () => {
           </dialog>
         </div>
         <p className="ms-7 me-3">
-          <FaPlaystation className="text-5xl ms-16 lg:ms-0 md:ms-0 lg:text-5xl md:text-5xl  text-sky-900" />
+          <FaPlaystation className="text-4xl ms-16 lg:ms-0 md:ms-0 lg:text-5xl md:text-5xl  text-sky-600" />
         </p>
         <div className="hidden items-center gap-2 lg:flex md:flex">
           {navLinks.map((link, index) => (
