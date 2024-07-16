@@ -1,5 +1,6 @@
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
+import Slider from "./components/Slider";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <div>
         <HeroSection />
       </div>
+      <Slider />
     </>
   );
 };

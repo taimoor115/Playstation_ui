@@ -8,8 +8,8 @@ const HeroSection = () => {
         className="h-[65vh] lg:h-[83vh] md:h-[83vh] object-cover relative"
         alt="header"
       />
-      <div className="absolute top-80 left-16 lg:top-36   text-white lg:left-56 md:left-56">
-        <p className="text-[70px]  lg:text-[80px] md:text-[80px] font-extrabold text-center lg:text-start md:text-start">
+      <div className="absolute top-[66%] left-16 lg:top-36 lg:left-56 md:left-56 text-white transform -translate-y-full lg:translate-y-0 md:translate-y-0 transition-transform duration-500 delay-300">
+        <p className="text-[70px] lg:text-[80px] md:text-[80px] font-extrabold text-center lg:text-start md:text-start">
           <span className="text-red-600">2k</span>25
         </p>
         <p className="text-gray-200 text-[18px] mb-3 lg:mb-0 md:lg-0 lg:text-[35px] md:text-[35px]">
@@ -21,7 +21,7 @@ const HeroSection = () => {
         </p>
         <div className="flex justify-center lg:justify-start md:justify-start">
           <Button
-            className="px-5 py-1  font-bold text-black bg-white mt-4 border border-transparent hover:border-black outline-none hover:outline-white border-double rounded-full"
+            className="px-5 py-1 font-bold text-black bg-white mt-4 border border-transparent hover:border-black outline-none hover:outline-white border-double rounded-full"
             text="Find out more"
           />
         </div>
