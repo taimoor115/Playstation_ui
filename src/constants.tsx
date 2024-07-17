@@ -170,3 +170,30 @@ export const games = [
     genre: "new",
   },
 ];
+
+export const gamesSlider = [
+  {
+    id: 1,
+    url: "WC1",
+    badge: "Premium",
+    title: "Playstation Plus Premium",
+    description:
+      "Enjoy, all the Playstation Plus Benefits from the Extra and Essential plans, plus exclusive benefits like game trial, cloud streaming,and the Classic Catalogue",
+  },
+  {
+    id: 2,
+    url: "WC3",
+    badge: "Extra",
+    title: "Playstation Plus Extra",
+    description:
+      "Download and play hundred of PS4, PS5 games from the Game Catalog, on top of all benefits from Playstation Plus Essential",
+  },
+  {
+    id: 3,
+    url: "WC2",
+    badge: "Essential",
+    title: "Playstation Plus Essential",
+    description:
+      "New games to play each month, online multiplayer exclusive PS Store discounts and more, available with all three Playstation Plus membership plans",
+  },
+];

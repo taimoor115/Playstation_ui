@@ -1,8 +1,9 @@
 import Carousel from "./components/Listings";
-import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import Slider from "./components/Slider";
 import ShowGames from "./components/ShowGames";
+import MainSection from "./components/MainSection";
+import HeroSection from "./components/HeroSection";
 
 const App = () => {
   return (
@@ -11,10 +12,11 @@ const App = () => {
         <p className="text-white text-xl text-end me-2 ">Sony</p>
       </div>
       <Navbar />
-      <HeroSection />
+      <MainSection />
       <Slider />
       <Carousel />
       <ShowGames />
+      <HeroSection />
     </>
   );
 };

@@ -1,30 +1,33 @@
 import Button from "./Button";
+import FullWidthSlider from "./FullWidthSlider";
+import { IoGameControllerOutline } from "react-icons/io5";
 
 const HeroSection = () => {
   return (
-    <div>
-      <img
-        src="./src/assets/images/header.webp"
-        className="h-[65vh] lg:h-[83vh] md:h-[83vh] object-cover relative"
-        alt="header"
-      />
-      <div className="absolute top-[66%] left-16 lg:top-36 lg:left-56 md:left-56 text-white transform -translate-y-full lg:translate-y-0 md:translate-y-0 transition-transform duration-500 delay-300">
-        <p className="text-[70px] lg:text-[80px] md:text-[80px] font-extrabold text-center lg:text-start md:text-start">
-          <span className="text-red-600">2k</span>25
+    <div className="relative">
+      <div className="flex flex-col justify-center gap-y-2 mt-1  items-center absolute w-full">
+        <span className="font-bold flex lg:items-center lg:gap-x-2 text-3xl">
+          <IoGameControllerOutline className="text-yellow-400 text-5xl font-extrabold" />
+          Playstation.Plus
+        </span>
+        <p className="font-thin lg:text-4xl">Discover PlayStation Plus</p>
+        <p className="text-sm text-gray-500">
+          Play hundreds of incredible PS5, PS4 and classic PlayStation games,
+          and discover epic adventures, unique indies, family favourites, and
+          everything in between.
         </p>
-        <p className="text-gray-200 text-[18px] mb-3 lg:mb-0 md:lg-0 lg:text-[35px] md:text-[35px]">
-          Play anywhere, win <span className="lg:block">everywhere</span>
-        </p>
-        <p className="text-md text-gray-200 lg:text-lg md:text-lg mt-3 mb-4">
-          Stack wins, raise banners, and make history in NBA 2k25.
-          <span className="lg:block md:block">Coming soon to PS4 & PS5</span>
-        </p>
-        <div className="flex justify-center lg:justify-start md:justify-start">
-          <Button
-            className="px-5 py-1 font-bold text-black bg-white mt-4 border border-transparent hover:border-black outline-none hover:outline-white border-double rounded-full"
-            text="Find out more"
-          />
-        </div>
+      </div>
+      <div className="">
+        <img src="./src/assets/images/BG1.webp" />
+      </div>
+      <div className="absolute inset-0 top-36 ">
+        <FullWidthSlider />
+      </div>
+      <div className="absolute lg:bottom-3 flex left-[45%] ">
+        <Button
+          className=" px-5 py-1 font-bold text-sm text-white bg-[#0064B7] mt-4 border border-transparent hover:border-[#0064B7] outline-none hover:outline-[#0064B7] border-double rounded-full"
+          text="Discover Playstation Plus"
+        />
       </div>
     </div>
   );
