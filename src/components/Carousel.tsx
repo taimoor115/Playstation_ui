@@ -8,29 +8,32 @@ interface Props {
 
 const Carousel = ({ onHandleClick }: Props) => {
   const [selected, setIsSelected] = useState(1);
-  const carouselRef = useRef(null);
+  const carouselRef = useRef<HTMLDivElement>(null);
 
   console.log("CId", selected);
 
   const handleClick = (direction: string) => {
-    const carouselWidth = carouselRef.current.offsetWidth;
+    // Check if carouselRef.current is not null
+    if (carouselRef.current) {
+      const carouselWidth = carouselRef.current.offsetWidth;
 
-    if (direction === "<") {
-      // Move left (handle edge case)
-      carouselRef.current.scrollLeft = Math.max(
-        carouselRef.current.scrollLeft - carouselWidth,
-        0
-      );
-      setIsSelected((prev) => prev - 1);
-    } else if (direction === ">") {
-      // Move right (handle edge case)
-      carouselRef.current.scrollLeft = Math.min(
-        carouselRef.current.scrollLeft + carouselWidth,
-        carouselRef.current.scrollWidth - carouselRef.current.clientWidth
-      );
-      setIsSelected((prev) => prev + 1);
+      if (direction === "<") {
+        // Move left (handle edge case)
+        carouselRef.current.scrollLeft = Math.max(
+          carouselRef.current.scrollLeft - carouselWidth,
+          0
+        );
+        setIsSelected((prev) => prev - 1);
+      } else if (direction === ">") {
+        // Move right (handle edge case)
+        carouselRef.current.scrollLeft = Math.min(
+          carouselRef.current.scrollLeft + carouselWidth,
+          carouselRef.current.scrollWidth - carouselRef.current.clientWidth
+        );
+        setIsSelected((prev) => prev + 1);
+      }
+      onHandleClick(direction === "<" ? selected - 1 : selected + 1);
     }
-    onHandleClick(direction === "<" ? selected - 1 : selected + 1);
   };
 
   const handleItemClick = (id: number) => {
