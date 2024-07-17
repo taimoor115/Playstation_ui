@@ -1,3 +1,4 @@
+import Carousel from "./components/Listings";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import Slider from "./components/Slider";
@@ -13,6 +14,7 @@ const App = () => {
         <HeroSection />
       </div>
       <Slider />
+      <Carousel />
     </>
   );
 };
