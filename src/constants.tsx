@@ -107,3 +107,66 @@ export const accessories = [
     price: "59,99",
   },
 ];
+
+export const games = [
+  {
+    title: "Stellar Blade",
+    url: "G1",
+    genre: "new",
+  },
+  {
+    title: "Call of Duty: Modern Walfare III",
+    url: "G6",
+    genre: "new",
+  },
+  {
+    title: "Marvel's Spider-Man 2",
+    url: "G2",
+    genre: "new",
+  },
+  {
+    title: "Death Strading 2",
+    url: "G5",
+    genre: "soon",
+  },
+  {
+    title: "Elder Ring Shadow of the Erdtree",
+    url: "G3",
+    genre: "soon",
+  },
+  {
+    title: "Silent Hill 4",
+    url: "G4",
+    genre: "soon",
+  },
+  {
+    title: "Assassin's Creed Shadows",
+    url: "G7",
+    genre: "soon",
+  },
+  {
+    title: "The Last of us part II Remastered",
+    url: "G8",
+    genre: "soon",
+  },
+  {
+    title: "LEGO Fortnite",
+    url: "G9",
+    genre: "soon",
+  },
+  {
+    title: "God of War Ragnarok",
+    url: "G10",
+    genre: "new",
+  },
+  {
+    title: "Rise of the Ronin",
+    url: "G11",
+    genre: "new",
+  },
+  {
+    title: "Star Wars™ Outlaws",
+    url: "G12",
+    genre: "new",
+  },
+];

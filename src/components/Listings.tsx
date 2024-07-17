@@ -16,7 +16,7 @@ const Listings = () => {
   console.log(filterAccessories);
 
   return (
-    <div className=" h-[80vh]">
+    <div className="">
       <div className="grid grid-cols-1 lg:grid-cols-[1fr,1.67fr] lg:mt-10 ps-3 lg:p-5">
         <div className=" flex flex-col items-center justify-center lg:p-3">
           <div className="text-4xl px-5 my-11 text-center lg:text-5xl lg:my-0 lg:px-0 lg:text-start text-black font-thin">
