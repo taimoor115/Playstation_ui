@@ -7,6 +7,8 @@ import HeroSection from "./components/HeroSection";
 import Store from "./components/Store";
 import News from "./components/News";
 import Links from "./components/Links";
+import Footer from "./components/Footer";
+import Advertisment from "./components/Advertisment";
 
 const App = () => {
   return (
@@ -24,6 +26,8 @@ const App = () => {
         <Store />
         <News />
         <Links />
+        <Advertisment />
+        <Footer />
       </div>
     </>
   );

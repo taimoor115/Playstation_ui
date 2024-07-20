@@ -267,3 +267,61 @@ export const links = [
   { id: 3, url: "Link3" },
   { id: 4, url: "Link4" },
 ];
+
+export const footerItems = [
+  {
+    id: 1,
+    title: "About",
+    children: [
+      { id: 1, content: "About SIE" },
+      { id: 2, content: "Career" },
+      { id: 3, content: "Playstation Studios" },
+      { id: 4, content: "Playstation Productions" },
+      { id: 5, content: "Corporate" },
+    ],
+  },
+  {
+    id: 2,
+    title: "Products",
+    children: [
+      { id: 1, content: "PS4" },
+      { id: 2, content: "PS5" },
+      { id: 3, content: "PS VR2" },
+      { id: 4, content: "PS Plus" },
+      { id: 5, content: "Accessories" },
+      { id: 6, content: "Games" },
+    ],
+  },
+  {
+    id: 3,
+    title: "Values",
+    children: [
+      { id: 1, content: "Environment" },
+      { id: 2, content: "Accessiblity" },
+      { id: 3, content: "Online Safety" },
+      { id: 4, content: "Diversity" },
+    ],
+  },
+  {
+    id: 4,
+    title: "Support",
+    children: [
+      { id: 1, content: "Support Hub" },
+      { id: 2, content: "Playstation safety" },
+      { id: 3, content: " PSN Status" },
+      { id: 4, content: "Playstation repairs" },
+      { id: 5, content: "Password Reset" },
+      { id: 6, content: "Manuals" },
+    ],
+  },
+  {
+    id: 5,
+    title: "Connect",
+    children: [
+      { id: 1, content: "Support Hub" },
+      { id: 2, content: "IOS app" },
+      { id: 3, content: " Andriod app" },
+      { id: 4, content: " Join our playstation" },
+    ],
+  },
+];
