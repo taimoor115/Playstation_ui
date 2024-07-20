@@ -1,4 +1,5 @@
 import Button from "./Button";
+import "animate.css";
 
 const MainSection = () => {
   return (
@@ -8,7 +9,7 @@ const MainSection = () => {
         className="h-[65vh] lg:h-[83vh] md:h-[83vh] object-cover relative"
         alt="header"
       />
-      <div className="absolute top-[66%] left-16 lg:top-36 lg:left-56 md:left-56 text-white transform -translate-y-full lg:translate-y-0 md:translate-y-0 transition-transform duration-500 delay-300">
+      <div className="animate__animated animate__fadeInUp absolute  top-[66%] left-16 lg:top-36 lg:left-56 md:left-56 text-white transform -translate-y-full lg:translate-y-0 md:translate-y-0 transition-transform duration-500 delay-300">
         <p className="text-[70px] lg:text-[80px] md:text-[80px] font-extrabold text-center lg:text-start md:text-start">
           <span className="text-red-600">2k</span>25
         </p>

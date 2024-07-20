@@ -34,7 +34,7 @@ const Store = () => {
             <img
               src="./src/assets/images/T1.webp"
               alt=""
-              className="rounded-md transition ease-in "
+              className="rounded-md transition ease-in-out delay-150  hover:scale-105  duration-300"
             />
           </div>
         </div>
