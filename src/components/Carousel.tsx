@@ -58,13 +58,13 @@ const Carousel = ({ onHandleClick }: Props) => {
         {accessories.map((things) => (
           <div
             key={things.id}
-            className={`flex-shrink-0 w-52 shadow-md shadow-gray-300 p-3 rounded`}
+            className={`flex-shrink-0 w-52 shadow-md shadow-gray-300 p-3 rounded ${
+              things.id === selected ? "ring-2 ring-blue-400" : "ring-0"
+            }`}
             onClick={() => handleItemClick(things.id)}
           >
             <div
-              className={`lg;p-7 flex items-center justify-center rounded-md  ${
-                things.id === selected ? "ring-2 ring-blue-400" : "ring-0"
-              }`}
+              className={`lg;p-7 flex items-center justify-center rounded-md `}
             >
               <img
                 src={`./src/assets/images/${things.url}.webp`}

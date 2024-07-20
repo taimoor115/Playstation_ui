@@ -6,6 +6,7 @@ import { SiSmartthings } from "react-icons/si";
 import { MdContactSupport } from "react-icons/md";
 import { FaNewspaper } from "react-icons/fa";
 import { FaAppStore } from "react-icons/fa";
+import { Children } from "react";
 
 export const navLinks = [
   "Games",
@@ -17,6 +18,9 @@ export const navLinks = [
   "Store",
   "Support",
 ];
+// const arr = [
+//   { id: 1, label: "Hme", path: "/", icon: <FaShow />, Children: {} },
+// ];
 
 export const iconList = {
   games: IoGameController,
@@ -196,4 +200,70 @@ export const gamesSlider = [
     description:
       "New games to play each month, online multiplayer exclusive PS Store discounts and more, available with all three Playstation Plus membership plans",
   },
+];
+
+export const gamesCards = [
+  {
+    url: "DC1",
+    title: "Latest updates",
+    description:
+      "Keep up to date with the month's biggest new events, including XDEFIENT Season one.",
+  },
+  {
+    url: "DC2",
+    title: "Playstation indies",
+    description:
+      "Enjoy, all the Playstation Plus Benefits from the Extra and Essential plans, plus exclusive benefits like game trial, cloud streaming,and the Classic Catalogue.",
+  },
+  {
+    url: "DC3",
+    title: "New Release",
+    description:
+      "New games to play each month, online multiplayer exclusive PS Store discounts and more, available.",
+  },
+];
+
+export const gamesCard = [
+  {
+    id: 1,
+    title:
+      "Evo 2024: Get to know the fighting games headlining the tournaments",
+    description:
+      "The eve of Evo, the world's biggest celebration of fighting games,is almost upon us. This massive event in Las Vegas Will host over10,000 participants in 2024, making it officially the biggest espor...",
+    url: "DC1",
+    image: "D1",
+    made: "CEO, 1047 Games",
+    company: "lan Proulx",
+    date: "Jul 18, 2024",
+  },
+  {
+    id: 2,
+    title: "Splitgate 2 portals over to PS5 and PS4 in 2025",
+    description:
+      "In the summer of 2021, when we released Splitgate on PS4, we didn't know what to expect. We certainly weren't ready for themillions of people who hopped online wanting to play our take o...",
+    url: "DC2",
+    image: "D2",
+    made: "CEO, 1047 Games",
+    company: "lan Proulx",
+    date: "Jul 18, 2024",
+  },
+  {
+    id: 3,
+    title:
+      "Neverness to Everness gameplay showcases supernatural urban open-world RPG, comingto PS5",
+    description:
+      "Hello everyone, I'm Kee Zhang from Hotta Studio. I'm incredibly excited to introduce our brand new title, Neverness to Everness, to PlayStation players today! Neverness to Everness (NTE for short) i....",
+    url: "DC3",
+    image: "D3",
+    made: "CEO, 1047 Games",
+    company: "lan Proulx",
+    date: "Jul 18, 2024",
+  },
+];
+
+export const links = [
+  { id: 1, url: "Link1" },
+  { id: 2, url: "Link2" },
+  { id: 3, url: "Link3" },
+  { id: 4, url: "Link4" },
 ];
