@@ -52,7 +52,7 @@ const Carousel = ({ onHandleClick }: Props) => {
         disabled={selected === 1}
       />
       <div
-        className="h-48 flex gap-x-3 overflow-x-auto no-scrollbar lg:p-3"
+        className="h-48 flex gap-x-3 overflow-x-auto no-scrollbar py-2 lg:p-3"
         ref={carouselRef}
       >
         {accessories.map((things) => (

@@ -6,7 +6,6 @@ import { SiSmartthings } from "react-icons/si";
 import { MdContactSupport } from "react-icons/md";
 import { FaNewspaper } from "react-icons/fa";
 import { FaAppStore } from "react-icons/fa";
-import { Children } from "react";
 
 export const navLinks = [
   "Games",
