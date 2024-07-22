@@ -18,7 +18,6 @@ function SlickCarousel() {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
         },
       },
       {
@@ -48,7 +47,7 @@ function SlickCarousel() {
   };
 
   return (
-    <div className=" w-full">
+    <div className="w-full">
       <Slider {...settings} className="flex lg:ml-7 px-8 lg:container lg:p-10">
         {gamesCard.map((game) => (
           <div

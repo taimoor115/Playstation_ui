@@ -1,14 +1,16 @@
-import Carousel from "./components/Listings";
-import Navbar from "./components/Navbar";
-import Slider from "./components/Slider";
-import ShowGames from "./components/ShowGames";
-import MainSection from "./components/MainSection";
-import HeroSection from "./components/HeroSection";
-import Store from "./components/Store";
-import News from "./components/News";
-import Links from "./components/Links";
-import Footer from "./components/Footer";
-import Advertisment from "./components/Advertisment";
+import {
+  Advertisment,
+  Footer,
+  HeroSection,
+  Links,
+  Listings,
+  MainSection,
+  Navbar,
+  News,
+  ShowGames,
+  Slider,
+  Store,
+} from "./component";
 
 const App = () => {
   return (
@@ -20,7 +22,7 @@ const App = () => {
         <Navbar />
         <MainSection />
         <Slider />
-        <Carousel />
+        <Listings />
         <ShowGames />
         <HeroSection />
         <Store />

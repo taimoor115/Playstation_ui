@@ -8,12 +8,10 @@ const Carousel = ({ onHandleClick }: CarouselProps) => {
   const carouselRef = useRef<HTMLDivElement>(null);
 
   const handleClick = (direction: string) => {
-    // Check if carouselRef.current is not null
     if (carouselRef.current) {
       const carouselWidth = carouselRef.current.offsetWidth;
 
       if (direction === "<") {
-        // Move left (handle edge case)
         carouselRef.current.scrollLeft = Math.max(
           carouselRef.current.scrollLeft - carouselWidth,
           0
