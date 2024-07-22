@@ -1,14 +1,11 @@
 import { useState } from "react";
-import Button from "./Button";
 import { games } from "../constants";
-import Cards from "./Cards";
+import { Button, Cards } from "../component";
 
 const ShowGames = () => {
   const [toggle, setToggle] = useState("new");
-  console.log(toggle);
 
   const filterGames = games.filter((game) => game.genre === toggle);
-  console.log(filterGames);
 
   return (
     <div className="bg-[#121314] h-[80vh] lg:h-[110vh] text-black mt-28 lg:mt-40 ">

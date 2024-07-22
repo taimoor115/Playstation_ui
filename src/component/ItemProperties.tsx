@@ -1,12 +1,7 @@
-import Button from "./Button";
+import { Button } from "../component";
+import { ItemPropertiesProps } from "../types/type";
 
-interface Props {
-  title: string | undefined;
-  description: string | undefined;
-  price: string | undefined;
-}
-
-const ItemPropterties = ({ title, description, price }: Props) => {
+const ItemProperties = ({ title, description, price }: ItemPropertiesProps) => {
   return (
     <>
       <div className="text-center text-2xl lg:text-start text-sky-600 font-thin ">
@@ -30,4 +25,4 @@ const ItemPropterties = ({ title, description, price }: Props) => {
   );
 };
 
-export default ItemPropterties;
+export default ItemProperties;

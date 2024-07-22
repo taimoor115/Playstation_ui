@@ -11,7 +11,7 @@ const Links = () => {
           {links.map((link) => (
             <img
               key={link.id}
-              src={`./src/assets/images/${link.url}.webp `}
+              src={`/images/${link.url}.webp `}
               className=" lg:w-[10%] lg:h-[10%] md:w-[10%] md:h-[10%] w-[35%] h-[30%]"
               alt="links"
             />

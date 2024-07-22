@@ -10,7 +10,7 @@ const Slider = () => {
         {sliderImages.map((url, index) => (
           <img
             key={index}
-            src={`./src/assets/images/${url}.webp`}
+            src={`/images/${url}.webp`}
             alt="images-slider"
             onClick={() => setIsSelected(index)}
             className={`object-cover h-[75%] items-center justify-center lg:w-[15%] lg:h-[65%] md:w-[30%] md:h-[65%] rounded-lg  border-2 border-transparent transition  translate-y-3 ease-in delay-150 hover:translate-y-0 hover:opacity-100  hover:scale-100 hover:shadow-lg hover:shadow-gray-500 duration-100 ${

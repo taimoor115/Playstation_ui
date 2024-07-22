@@ -1,7 +1,6 @@
+import { Button, Drawer } from "../component";
 import { FaPlaystation } from "react-icons/fa";
 import { CiSearch } from "react-icons/ci";
-import Button from "./Button";
-import Drawer from "./Drawer";
 import { useState } from "react";
 import SearchBar from "./Search";
 import { navLinks } from "../constants";
@@ -15,7 +14,11 @@ const Navbar = () => {
         <div className="flex items-center lg:hidden md:hidden">
           <Drawer />
           <CiSearch
-            onClick={() => document.getElementById("my_modal_2")?.showModal()}
+            onClick={() =>
+              (
+                document.getElementById("my_modal_2") as HTMLDialogElement
+              ).showModal()
+            }
             className="text-3xl text-black font-extrabold text-start"
           />
           <dialog id="my_modal_2" className="modal modal-top">

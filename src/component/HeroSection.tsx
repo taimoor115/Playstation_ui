@@ -1,8 +1,7 @@
 import { gamesCards } from "../constants";
-import Button from "./Button";
-import Cards from "./Cards";
-import FullWidthSlider from "./FullWidthSlider";
+
 import { IoGameControllerOutline } from "react-icons/io5";
+import { Button, Cards, FullWidthSlider } from "../component";
 
 const HeroSection = () => {
   return (
@@ -21,10 +20,7 @@ const HeroSection = () => {
           </p>
         </div>
 
-        <img
-          src="./src/assets/images/BG1.webp"
-          className="h-[75vh] lg:h-[100vh]"
-        />
+        <img src="/images/BG1.webp" className="h-[75vh] lg:h-[100vh]" />
 
         <div className="absolute inset-0 top-52 lg:top-44 ">
           <FullWidthSlider />
@@ -38,7 +34,7 @@ const HeroSection = () => {
       </div>
       <div className="h-[470px] bg-black  lg:h-[120vh] lg:bg-transparent relative">
         <img
-          src="./src/assets/images/BG2.webp"
+          src="/images/BG2.webp"
           alt="image"
           className="h-[50%] lg:h-full w-full shadow-2xl shadow-gray-600  "
         />
@@ -68,7 +64,7 @@ const HeroSection = () => {
       </div>
       <div className="bg-[#27254F] h-[124vh] relative">
         <img
-          src="./src/assets/images/BG3.webp"
+          src="/images/BG3.webp"
           alt="image"
           className="w-full object-cover h-[40%] lg:h-[50%] left-0 object-right"
         />

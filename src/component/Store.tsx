@@ -8,7 +8,7 @@ const Store = () => {
           <div className="lg:flex items-center h-full lg:w-[30%]">
             <div className="flex lg:hidden h-full lg:w-[70%]  items-center ">
               <img
-                src="./src/assets/images/T1.webp"
+                src="/images/T1.webp"
                 alt=""
                 className="rounded-md transition ease-in "
               />
@@ -32,7 +32,7 @@ const Store = () => {
           </div>
           <div className="hidden lg:flex h-full w-[70%]  items-center ">
             <img
-              src="./src/assets/images/T1.webp"
+              src="/images/T1.webp"
               alt=""
               className="rounded-md transition ease-in-out delay-150  hover:scale-105  duration-300"
             />

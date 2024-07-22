@@ -1,16 +1,11 @@
 import { useState, useRef } from "react";
 import { accessories } from "../constants";
 import Button from "./Button";
+import { CarouselProps } from "../types/type";
 
-interface Props {
-  onHandleClick: (id: number) => void;
-}
-
-const Carousel = ({ onHandleClick }: Props) => {
+const Carousel = ({ onHandleClick }: CarouselProps) => {
   const [selected, setIsSelected] = useState(1);
   const carouselRef = useRef<HTMLDivElement>(null);
-
-  console.log("CId", selected);
 
   const handleClick = (direction: string) => {
     // Check if carouselRef.current is not null
@@ -67,7 +62,7 @@ const Carousel = ({ onHandleClick }: Props) => {
               className={`lg;p-7 flex items-center justify-center rounded-md `}
             >
               <img
-                src={`./src/assets/images/${things.url}.webp`}
+                src={`/images/${things.url}.webp`}
                 alt="accessories-images"
                 className="overflow-none rounded-md"
               />

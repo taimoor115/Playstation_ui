@@ -1,13 +1,6 @@
-interface Item {
-  id: number;
-  title: string;
-  children: { id: number; content: string }[];
-}
-interface Props {
-  item: Item;
-}
+import { FooterPropertiesProps } from "../types/type";
 
-const FooterProperties = ({ item }: Props) => {
+const FooterProperties = ({ item }: FooterPropertiesProps) => {
   return (
     <div
       key={item?.id}

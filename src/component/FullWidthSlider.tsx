@@ -10,7 +10,7 @@ const FullWidthSlider = () => {
           className="carousel-item relative w-full"
         >
           <img
-            src={`./src/assets/images/${game.url}.webp`}
+            src={`/images/${game.url}.webp`}
             className="object-cover  lg:object-none w-full h-[300px] lg:h-[60%] opacity-100"
           />
           <div className="text-white absolute  lg:h-[200px] top-16 left-14 lg:top-20 lg:left-20 space-y-4 ">

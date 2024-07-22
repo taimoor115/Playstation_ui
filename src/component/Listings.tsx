@@ -1,7 +1,6 @@
 import { useState } from "react";
-import Carousel from "./Carousel";
 import { accessories } from "../constants";
-import ItemPropterties from "./ItemPropterties";
+import { Carousel, ItemProperties } from "../component";
 
 const Listings = () => {
   const [selectedId, setSelectedId] = useState(1);
@@ -9,8 +8,6 @@ const Listings = () => {
   const onHandleClick = (id: number) => {
     setSelectedId(id);
   };
-
-  console.log("Id", selectedId);
 
   const filterAccessories = accessories.find((item) => item.id === selectedId);
   console.log(filterAccessories);
@@ -23,7 +20,7 @@ const Listings = () => {
             Introduction the PS5 console and accessories
           </div>
           <div className="hidden sm:block lg:block lg:mt-3 w-full space-y-2">
-            <ItemPropterties
+            <ItemProperties
               title={filterAccessories?.title}
               description={filterAccessories?.description}
               price={filterAccessories?.price}
@@ -32,7 +29,7 @@ const Listings = () => {
         </div>
         <div className="hidden lg:block">
           <img
-            src={`./src/assets/images/${filterAccessories?.url}.webp`}
+            src={`/images/${filterAccessories?.url}.webp`}
             alt="img"
             className="lg:p-4"
           />
@@ -43,13 +40,10 @@ const Listings = () => {
       </div>
       <div className="p-5">
         <div className="lg:hidden">
-          <img
-            src={`./src/assets/images/${filterAccessories?.url}.webp`}
-            alt=""
-          />
+          <img src={`/images/${filterAccessories?.url}.webp`} alt="" />
         </div>
         <div className="lg:hidden">
-          <ItemPropterties
+          <ItemProperties
             title={filterAccessories?.title}
             description={filterAccessories?.description}
             price={filterAccessories?.price}

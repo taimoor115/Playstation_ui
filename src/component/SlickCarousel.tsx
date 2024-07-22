@@ -56,10 +56,7 @@ function SlickCarousel() {
             className="grid grid-cols-1 lg:grid-cols-3 justify-stretch card card-compact shadow-xl lg:max-h-[90% ] lg:max-w-[95%] md:max-w-[95%]   overflow-hidden"
           >
             <figure className="hover:shadow-md hover:shadow-gray-600">
-              <img
-                src={`./src/assets/images/${game.url}.webp`}
-                alt={game.title}
-              />
+              <img src={`/images/${game.url}.webp`} alt={game.title} />
             </figure>
             <div className="card-body">
               <h2 className="card-title lg:text-md font-thin  line-clamp-2">
@@ -70,7 +67,7 @@ function SlickCarousel() {
               </p>
               <div className="flex justify-start items-center gap-x-2 lg:mt-8">
                 <img
-                  src={`./src/assets/images/${game.image}.webp`}
+                  src={`/images/${game.image}.webp`}
                   alt={game.title}
                   className="rounded w-[15%] h-[40%]"
                 />

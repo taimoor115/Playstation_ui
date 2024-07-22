@@ -5,7 +5,7 @@ const MainSection = () => {
   return (
     <div>
       <img
-        src="./src/assets/images/header.webp"
+        src="/images/header.webp"
         className="h-[65vh] lg:h-[83vh] md:h-[83vh] object-cover relative"
         alt="header"
       />
